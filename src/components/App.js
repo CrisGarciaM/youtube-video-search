@@ -14,7 +14,12 @@ class App extends React.Component {
       },
     });
 
-    this.setState({ videos: response.data.items });
+    this.setState({
+      videos: response.data.items,
+
+      //Adds a default video to display when user searches
+      selectedVideo: response.data.items[0],
+    });
   };
 
   //Call Back method, pass as a prop to the videoList
