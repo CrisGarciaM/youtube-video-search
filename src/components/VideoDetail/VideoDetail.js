@@ -1,4 +1,5 @@
 import React from 'react';
+import './VideoDetails.css';
 
 const VideoDetail = (props) => {
   const { video } = props;
@@ -14,7 +15,7 @@ const VideoDetail = (props) => {
       <div className="ui embed">
         <iframe title="videoPlayer" src={videoSrc} />
       </div>
-      <div className="ui segment">
+      <div className="ui segment details-container">
         <h4 className="ui header">{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
       </div>
