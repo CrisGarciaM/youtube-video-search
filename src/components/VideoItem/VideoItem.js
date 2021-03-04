@@ -2,12 +2,14 @@ import React from 'react';
 import './VideoItem.css';
 
 const VideoItem = (props) => {
-  const { video } = props;
+  //Prop onVideoSelect is the prop passed from VideoList
+  //When user click on the VideoItem, the callback is invoked
+  const { video, onVideoSelect } = props;
 
   return (
-    <div className="video-item item">
+    <div className="video-item item" onClick={() => onVideoSelect(video)}>
       <img
-        alt="video"
+        alt={video.snippet.title}
         className="ui image"
         src={video.snippet.thumbnails.medium.url}
       />
