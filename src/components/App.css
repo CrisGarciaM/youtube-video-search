@@ -1,0 +1,22 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgb(198, 220, 236);
+}
+
+.main-app {
+  height: 100vh;
+  padding: 20px;
+}
+
+.video-list {
+  padding-right: 20px;
+  height: 83vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-padding: 0 200px 0 0;
+}

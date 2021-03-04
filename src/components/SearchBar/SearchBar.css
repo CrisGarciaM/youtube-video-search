@@ -1,0 +1,19 @@
+.search-bar {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 300px !important;
+}
+
+.field img {
+  width: 50px;
+}
+
+.field input {
+  width: 70% !important;
+}

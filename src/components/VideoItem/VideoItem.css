@@ -1,0 +1,11 @@
+.video-item {
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer;
+  background-color: rgb(100, 177, 157);
+  margin: 10px 0;
+}
+
+.video-item.item img {
+  max-width: 180px;
+}
