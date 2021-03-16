@@ -2,32 +2,21 @@ import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar/SearchBar';
 import VideoList from './VideoList/VideoList';
 import VideoDetail from './VideoDetail/VideoDetail';
-import youtube from '../apis/youtube';
+import useVideos from '../hooks/useVideos';
 import './App.css';
 
 const App = () => {
-  const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [videos, search] = useVideos('buildings');
 
   useEffect(() => {
-    onTermSubmit('What is componentDidMount');
-  }, []);
-
-  const onTermSubmit = async (term) => {
-    const response = await youtube.get('/search', {
-      params: {
-        q: term,
-      },
-    });
-
-    setVideos(response.data.items);
-    setSelectedVideo(response.data.items[0]);
-  };
+    setSelectedVideo(videos[0]);
+  }, [videos]);
 
   return (
     <div className="main">
       <div className="main-app">
-        <SearchBar onFormSubmit={onTermSubmit} />
+        <SearchBar onFormSubmit={search} />
         {
           //Grid has 16 default columns}
         }
