@@ -37,13 +37,16 @@ This project was build solely for the purpose of practicing React Class and Func
 You will notice the project has three branches:
 
 > youtube-video-search/classComponents
-> In this branch the app was build using React Class Components
+
+In this branch the app was build using React Class Components
 
 > youtube-video-search/functionalComponents
-> In this branch the app was refactor to use React Functional Components, with React Hooks and a custom Hook
+
+In this branch the app was refactor to use React Functional Components, with React Hooks and a custom Hook
 
 > Master
-> The Master branch has been left with the app fully completed with functional Components, React Hooks and a custom Hook
+
+The Master branch has been left with the app fully completed with functional Components, React Hooks and a custom Hook
 
 ## Tecnologies Used :nut_and_bolt:
 
